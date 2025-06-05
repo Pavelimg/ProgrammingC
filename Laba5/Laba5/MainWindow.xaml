@@ -1,0 +1,62 @@
+﻿<Window x:Class="Lab5_Settings_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Васильев Лаба 5 (Настройки)" Height="400" Width="500"
+        Closing="Window_Closing">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Группа для ввода текста -->
+        <GroupBox Header="Введите текст" Grid.Row="0">
+            <TextBox x:Name="txtInput" 
+                     Text="абв" 
+                     TextChanged="txtInput_TextChanged"
+                     MaxLength="50"
+                     ToolTip="Введите текст для предпросмотра (макс. 50 символов)"/>
+        </GroupBox>
+
+        <!-- Группа настроек шрифта -->
+        <GroupBox Header="Настройки шрифта" Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <CheckBox x:Name="chkItalic" Content="Курсив" Grid.Row="0" Checked="SettingChanged" Unchecked="SettingChanged"/>
+                <CheckBox x:Name="chkBold" Content="Жирный" Grid.Row="1" Checked="SettingChanged" Unchecked="SettingChanged"/>
+                <CheckBox x:Name="chkUnderline" Content="Подчеркнутый" Grid.Row="2" Checked="SettingChanged" Unchecked="SettingChanged"/>
+            </Grid>
+        </GroupBox>
+
+        <!-- Группа настроек регистра -->
+        <GroupBox Header="Настройки регистра" Grid.Row="2">
+            <StackPanel>
+                <RadioButton x:Name="radLower" Content="Нижний регистр" Checked="SettingChanged"/>
+                <RadioButton x:Name="radUpper" Content="Верхний регистр" Checked="SettingChanged"/>
+            </StackPanel>
+        </GroupBox>
+
+        <!-- Группа настроек обновления -->
+        <GroupBox Header="Настройки обновления" Grid.Row="3">
+            <StackPanel>
+                <RadioButton x:Name="radImmediate" Content="Сразу" Checked="SettingChanged"/>
+                <RadioButton x:Name="radOnClick" Content="По нажатию" Checked="SettingChanged" IsChecked="True"/>
+            </StackPanel>
+        </GroupBox>
+
+        <!-- Поле для предпросмотра текста -->
+        <TextBox x:Name="txtPreview" Grid.Row="4" Margin="0 10" IsReadOnly="True" 
+                 TextAlignment="Center" VerticalContentAlignment="Center" FontSize="16"/>
+
+        <!-- Кнопка обновления -->
+        <Button x:Name="btnUpdate" Grid.Row="5" Content="Обновить" HorizontalAlignment="Right" 
+                Padding="10 5" Click="btnUpdate_Click" IsEnabled="True"/>
+    </Grid>
+</Window>

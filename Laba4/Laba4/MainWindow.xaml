@@ -1,0 +1,71 @@
+﻿<Window x:Class="FruitCounter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Васильев лаба 4 (калькулятор для тупых)" Height="350" Width="500" Background="#FFF0F0F0">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- User1 -->
+        <StackPanel Grid.Column="0" Grid.Row="0" Margin="20,10">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Image Source="apple.png" Width="20" Height="20" Margin="0,0,5,0"/>
+                <Label Content="Яблоки:" Foreground="#FF444444"/>
+            </StackPanel>
+            <TextBox x:Name="apples1" Background="White" Margin="0,0,0,10" GotFocus="ResetFieldColor"/>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Image Height="23" Source="/Image/pear.png" Stretch="Fill" Width="28"/>
+                <Label Content="Груши:" Foreground="#FF444444"/>
+                <Image Source="banana.png" Width="20" Height="20" Margin="0,0,5,0"/>
+            </StackPanel>
+            <TextBox x:Name="pears1" Background="White" GotFocus="ResetFieldColor"/>
+        </StackPanel>
+
+        <!-- User2 -->
+        <StackPanel Grid.Column="1" Grid.Row="0" Margin="20,10">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Image Source="apple.png" Width="20" Height="20" Margin="0,0,5,0"/>
+                <Label Content="Яблоки:" Foreground="#FF444444"/>
+            </StackPanel>
+            <TextBox x:Name="apples2" Background="White" Margin="0,0,0,10" GotFocus="ResetFieldColor"/>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Image Height="23" Source="/Image/pear.png" Stretch="Fill" Width="28"/>
+                <Label Content="Груши:" Foreground="#FF444444"/>
+                <Image Source="banana.png" Width="20" Height="20" Margin="0,0,5,0"/>
+            </StackPanel>
+            <TextBox x:Name="pears2" Background="White" GotFocus="ResetFieldColor"/>
+        </StackPanel>
+
+        <!-- Кнопки -->
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center">
+            <Button x:Name="btnCalculate" Content="СЧЁТ" Width="100" Height="30" 
+                    Margin="10" Background="#FF0078D7" Foreground="White" Click="Calculate_Click"/>
+            <Button x:Name="btnReset" Content="СБРОС" Width="100" Height="30" 
+                    Margin="10" Background="#FF808080" Foreground="White" Click="Reset_Click"/>
+        </StackPanel>
+
+        <!-- Результат -->
+        <TextBlock x:Name="tbResult" Grid.Row="2" Grid.ColumnSpan="2" 
+                   HorizontalAlignment="Center" Margin="10" Visibility="Collapsed"
+                   FontSize="14" Foreground="#FF333333"/>
+        <Label x:Name="name1" Content="user1" HorizontalAlignment="Left" Margin="122,0,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="name2" Content="user2" HorizontalAlignment="Left" Margin="138,0,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="text1" Content="" Grid.Row="3" Grid.ColumnSpan="2" 
+               HorizontalAlignment="Center" Margin="10" FontSize="14" Foreground="#FF333333"/>
+        <Image Margin="10,8,208,80" Source="/Image/apple.png" Stretch="Fill" Height="32" Width="32"/>
+        <Image Margin="10,8,208,80" Source="/Image/apple.png" Stretch="Fill" Grid.Column="1" Width="32"/>
+    </Grid>
+</Window>

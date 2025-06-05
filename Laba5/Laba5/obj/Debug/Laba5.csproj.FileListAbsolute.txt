@@ -1,0 +1,14 @@
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba5\Laba5\bin\Debug\Laba5.exe.config
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba5\Laba5\bin\Debug\Laba5.exe
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba5\Laba5\bin\Debug\Laba5.pdb
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba5\Laba5\obj\Debug\Laba5.csproj.AssemblyReference.cache
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba5\Laba5\obj\Debug\MainWindow.baml
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba5\Laba5\obj\Debug\MainWindow.g.cs
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba5\Laba5\obj\Debug\App.g.cs
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba5\Laba5\obj\Debug\Laba5_MarkupCompile.cache
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba5\Laba5\obj\Debug\Laba5.g.resources
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba5\Laba5\obj\Debug\Laba5.Properties.Resources.resources
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba5\Laba5\obj\Debug\Laba5.csproj.GenerateResource.cache
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba5\Laba5\obj\Debug\Laba5.csproj.CoreCompileInputs.cache
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba5\Laba5\obj\Debug\Laba5.exe
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba5\Laba5\obj\Debug\Laba5.pdb

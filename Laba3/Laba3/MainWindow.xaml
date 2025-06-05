@@ -1,0 +1,71 @@
+﻿<Window x:Class="_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3"
+        mc:Ignorable="d"
+        Title="Васильев Лаба 3 (точечка бегает)" 
+        Height="800" 
+        Width="800"
+        ResizeMode="NoResize">
+    <Grid x:Name="mainGrid">
+        <!-- Кнопка "Вверх" -->
+        <Button x:Name="btnUp" 
+                Content="Вверх" 
+                HorizontalAlignment="Left" 
+                Margin="600,100,0,0" 
+                VerticalAlignment="Top" 
+                Width="50" 
+                Click="Button_Click"/>
+
+        <!-- Кнопка "Вниз" -->
+        <Button x:Name="btnDown" 
+                Content="Вниз" 
+                HorizontalAlignment="Left" 
+                Margin="600,200,0,0" 
+                VerticalAlignment="Top" 
+                Width="50" 
+                Click="Button_Click_1"/>
+
+        <!-- Кнопка "Влево" -->
+        <Button x:Name="btnLeft" 
+                Content="Влево" 
+                HorizontalAlignment="Left" 
+                Margin="525,150,0,0" 
+                VerticalAlignment="Top" 
+                Width="50" 
+                Click="Button_Click_2"/>
+
+        <!-- Кнопка "Вправо" -->
+        <Button x:Name="btnRight" 
+                Content="Вправо" 
+                HorizontalAlignment="Left" 
+                Margin="675,150,0,0" 
+                VerticalAlignment="Top" 
+                Width="50" 
+                Click="Button_Click_3"/>
+
+        <!-- Кнопка "Инфо" -->
+        <Button x:Name="btnInfo" 
+                Content="Инфо" 
+                HorizontalAlignment="Left" 
+                Margin="600,150,0,0" 
+                VerticalAlignment="Top" 
+                Width="50" 
+                Click="Button_Click_4"/>
+
+        <!-- Метка (точка) -->
+        <Label x:Name="labelPoint" 
+               Content="+" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               Margin="0,0,0,0" 
+               Foreground="Red" 
+               Height="30" 
+               Width="30" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center" 
+               FontSize="20"/>
+    </Grid>
+</Window>

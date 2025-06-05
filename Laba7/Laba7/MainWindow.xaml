@@ -1,0 +1,101 @@
+﻿<Window x:Class="лаба7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Васильев лаба 7 (колор пикер)" Height="450" Width="800">
+    <Grid>
+
+        <!-- Метка с текстом -->
+        <Label Content="СКРЫТЫЙ ТЕКСТ"
+       Foreground="{Binding LabelForegroundColor}"
+       HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,70"/>
+
+        <!-- Прямоугольник с прозрачностью -->
+        <Rectangle x:Name="ColorRectangle" 
+                   Width="400" Height="200" 
+                   Fill="{Binding RectangleColor}"
+                   Opacity="{Binding RectangleOpacity}"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20"/>
+
+        
+
+        <!-- Label для прокрутки колесиком -->
+        <Label Background="Transparent"
+               Grid.RowSpan="2" Grid.ColumnSpan="2"
+               PreviewMouseWheel="Label_PreviewMouseWheel"/>
+
+        <!-- Панель управления цветом -->
+        <StackPanel Orientation="Horizontal" 
+                    HorizontalAlignment="Center" Margin="0,250,0,16" Width="501">
+            <StackPanel Orientation="Vertical" Margin="5">
+                <TextBlock Text="Красный"/>
+                <ScrollBar x:Name="RedScrollBar"
+                    Orientation="Horizontal"
+                    Minimum="0"
+                    Maximum="255"
+                    SmallChange="25"
+                    LargeChange="25"
+                    Value="{Binding RedValue}"
+                    Width="150"/>
+                <TextBox Text="{Binding RedValue, UpdateSourceTrigger=PropertyChanged}" 
+                         Width="50"
+                         />
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="5">
+                <TextBlock Text="Зеленый"/>
+                <Slider x:Name="GreenSlider" 
+                        Minimum="0" 
+                        Maximum="255" 
+                        TickFrequency="25" 
+                        IsSnapToTickEnabled="True"
+                        SmallChange="25"
+                        LargeChange="25"
+                        Value="{Binding GreenValue}"
+                        TickPlacement="BottomRight"
+                        Width="150"/>
+                <TextBox Text="{Binding GreenValue, UpdateSourceTrigger=PropertyChanged}" 
+                         Width="50"
+                         />
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="5">
+                <TextBlock Text="Синий"/>
+                <Slider x:Name="BlueSlider" 
+                        Minimum="0" 
+                        Maximum="255" 
+                        TickFrequency="25" 
+                        IsSnapToTickEnabled="True"
+                        SmallChange="25"
+                        LargeChange="25"
+                        Value="{Binding BlueValue}"
+                        TickPlacement="BottomRight"
+                        Width="150"/>
+                <TextBox Text="{Binding BlueValue, UpdateSourceTrigger=PropertyChanged}" 
+                         Width="50"
+                         />
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Панель управления прозрачностью -->
+        <StackPanel Orientation="Vertical" 
+                    HorizontalAlignment="Right" Margin="10,20,10,0">
+            <TextBlock Text="Прозрачность" Margin="5"/>
+            <ScrollBar x:Name="OpacityScrollBar" 
+                       Orientation="Vertical" 
+                       Minimum="0" 
+                       Maximum="100" 
+                       Value="{Binding ScrollBarValue}" 
+                       Height="99" RenderTransformOrigin="0.5,0.5">
+                <ScrollBar.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-360"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </ScrollBar.RenderTransform>
+            </ScrollBar>
+            <TextBlock Text="{Binding OpacityValue, StringFormat={}{0:F0}%}" HorizontalAlignment="Center"/>
+            <Button Content="Рандом" Click="RandomButton_Click" 
+                    IsEnabled="{Binding IsRandomEnabled}" Margin="0,10"/>
+        </StackPanel>
+    </Grid>
+</Window>

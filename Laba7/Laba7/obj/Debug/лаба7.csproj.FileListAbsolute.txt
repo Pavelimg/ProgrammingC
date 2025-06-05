@@ -1,0 +1,14 @@
+C:\Lifestyle\C++\лаба7\лаба7\obj\Debug\лаба7.csproj.AssemblyReference.cache
+C:\Lifestyle\C++\лаба7\лаба7\obj\Debug\MainWindow.g.cs
+C:\Lifestyle\C++\лаба7\лаба7\obj\Debug\App.g.cs
+C:\Lifestyle\C++\лаба7\лаба7\obj\Debug\лаба7_MarkupCompile.cache
+C:\Lifestyle\C++\лаба7\лаба7\bin\Debug\лаба7.exe.config
+C:\Lifestyle\C++\лаба7\лаба7\bin\Debug\лаба7.exe
+C:\Lifestyle\C++\лаба7\лаба7\bin\Debug\лаба7.pdb
+C:\Lifestyle\C++\лаба7\лаба7\obj\Debug\MainWindow.baml
+C:\Lifestyle\C++\лаба7\лаба7\obj\Debug\лаба7.g.resources
+C:\Lifestyle\C++\лаба7\лаба7\obj\Debug\лаба7.Properties.Resources.resources
+C:\Lifestyle\C++\лаба7\лаба7\obj\Debug\лаба7.csproj.GenerateResource.cache
+C:\Lifestyle\C++\лаба7\лаба7\obj\Debug\лаба7.csproj.CoreCompileInputs.cache
+C:\Lifestyle\C++\лаба7\лаба7\obj\Debug\лаба7.exe
+C:\Lifestyle\C++\лаба7\лаба7\obj\Debug\лаба7.pdb

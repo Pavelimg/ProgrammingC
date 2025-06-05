@@ -1,0 +1,15 @@
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba1\Laba1\bin\Debug\Laba1.exe.config
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba1\Laba1\bin\Debug\Laba1.exe
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba1\Laba1\bin\Debug\Laba1.pdb
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba1\Laba1\obj\Debug\Laba1.csproj.AssemblyReference.cache
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba1\Laba1\obj\Debug\MainWindow.g.cs
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba1\Laba1\obj\Debug\App.g.cs
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba1\Laba1\obj\Debug\Laba1_MarkupCompile.cache
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba1\Laba1\obj\Debug\Laba1_MarkupCompile.lref
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba1\Laba1\obj\Debug\MainWindow.baml
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba1\Laba1\obj\Debug\Laba1.g.resources
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba1\Laba1\obj\Debug\Laba1.Properties.Resources.resources
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba1\Laba1\obj\Debug\Laba1.csproj.GenerateResource.cache
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba1\Laba1\obj\Debug\Laba1.csproj.CoreCompileInputs.cache
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba1\Laba1\obj\Debug\Laba1.exe
+C:\Users\Pavel\Pycharm\ProgrammingC\Laba1\Laba1\obj\Debug\Laba1.pdb

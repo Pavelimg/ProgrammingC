@@ -1,0 +1,48 @@
+﻿<Window x:Class="Lab6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Васильев Лаба 6" Height="450" Width="500">
+    <Grid x:Name="window1">
+        <Label Content="Страна:" HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="CountryComboBox" HorizontalAlignment="Left" Margin="120,20,0,0" VerticalAlignment="Top" Width="200" SelectionChanged="CountryComboBox_SelectionChanged"/>
+
+        <ListBox x:Name="PhoneTypeListBox" HorizontalAlignment="Left" Margin="120,73,0,0" VerticalAlignment="Top" Width="100" Height="45" SelectionChanged="PhoneTypeListBox_SelectionChanged">
+            <ListBoxItem Content="Мобильный"/>
+            <ListBoxItem Content="Домашний"/>
+        </ListBox>
+
+        <Label Content="Телефон:" HorizontalAlignment="Left" Margin="30,79,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="PhoneTextBox" HorizontalAlignment="Left" Margin="237,79,0,0" VerticalAlignment="Top" Width="200" Height="30" TextChanged="PhoneTextBox_TextChanged" GotFocus="PhoneTextBox_GotFocus" LostFocus="PhoneTextBox_LostFocus" PreviewKeyDown="PhoneTextBox_PreviewKeyDown" />
+
+        <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="29,139,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="LastNameTextBox" HorizontalAlignment="Left" Margin="120,135,0,0" VerticalAlignment="Top" Width="200" Height="30" 
+         PreviewTextInput="NameTextBox_PreviewTextInput" LostFocus="NameTextBox_LostFocus" />
+        <Label Content="Имя:" HorizontalAlignment="Left" Margin="29,170,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="FirstNameTextBox" HorizontalAlignment="Left" Margin="120,170,0,0" VerticalAlignment="Top" Width="200" Height="30" 
+         PreviewTextInput="NameTextBox_PreviewTextInput" LostFocus="NameTextBox_LostFocus" />
+        <Label Content="Дата рождения:" HorizontalAlignment="Left" Margin="30,254,0,0" VerticalAlignment="Top"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="132,170,0,60">
+            <TextBox x:Name="DayTextBox" Width="40" Height="30" Margin="0,0,5,0" TextChanged="DateTextBox_TextChanged" PreviewTextInput="NumericOnly_PreviewTextInput"/>
+            <ComboBox x:Name="MonthComboBox" Width="100" Height="30" Margin="0,0,5,0" SelectionChanged="MonthComboBox_SelectionChanged">
+                <ComboBoxItem Content="Январь" Tag="31"/>
+                <ComboBoxItem Content="Февраль" Tag="28"/>
+                <ComboBoxItem Content="Март" Tag="31"/>
+                <ComboBoxItem Content="Апрель" Tag="30"/>
+                <ComboBoxItem Content="Май" Tag="31"/>
+                <ComboBoxItem Content="Июнь" Tag="30"/>
+                <ComboBoxItem Content="Июль" Tag="31"/>
+                <ComboBoxItem Content="Август" Tag="31"/>
+                <ComboBoxItem Content="Сентябрь" Tag="30"/>
+                <ComboBoxItem Content="Октябрь" Tag="31"/>
+                <ComboBoxItem Content="Ноябрь" Tag="30"/>
+                <ComboBoxItem Content="Декабрь" Tag="31"/>
+            </ComboBox>
+            <TextBox x:Name="YearTextBox" Width="60" Height="30" TextChanged="DateTextBox_TextChanged" PreviewTextInput="NumericOnly_PreviewTextInput" />
+        </StackPanel>
+
+        <!-- Блок для отображения ошибок -->
+        <TextBlock x:Name="ErrorTextBlock" Foreground="Red" HorizontalAlignment="Left" Margin="120,320,0,0" VerticalAlignment="Top" Width="300" TextWrapping="Wrap"/>
+
+        <Button x:Name="SubmitButton" Content="Отправить заявку" HorizontalAlignment="Left" Margin="177,328,0,0" VerticalAlignment="Top" Width="120" Click="SubmitButton_Click"/>
+    </Grid>
+</Window>
